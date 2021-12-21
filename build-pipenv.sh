@@ -18,7 +18,7 @@ if ! which pipenv
 fi
 
 # create virtualenv and install build dependencies
-pipenv install --ignore-pipfile
+pipenv install --ignore-pipfile --python=/usr/bin/python3.8
 
 # test for fontmake install in venv
 if ! pipenv run fontmake --version
